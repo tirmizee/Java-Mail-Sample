@@ -1,5 +1,5 @@
 # Java-Mail-Sample
-Properties props = System.getProperties();
+		Properties props = System.getProperties();
 	        props.put("mail.smtp.host", "192.168.1.214");
 
 	        Session session = Session.getInstance(props, null);
