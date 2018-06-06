@@ -1,4 +1,5 @@
 # Java-Mail-Sample
+		// No Authentication
 		Properties props = System.getProperties();
 	        props.put("mail.smtp.host", "192.168.1.214");
 
