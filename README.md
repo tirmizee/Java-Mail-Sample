@@ -17,3 +17,18 @@
 	        msg.saveChanges();
 	        tr.sendMessage(msg, msg.getAllRecipients());
 	        tr.close();
+		
+
+# Spring Mail
+		JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
+	        mailSender.setHost("192.168.1.214");
+	        mailSender.setPort(25);
+	         
+	        MimeMessage message = mailSender.createMimeMessage();
+	        
+	        MimeMessageHelper helper = new MimeMessageHelper(message, true);
+	        helper.setFrom("xxxxx@generali.co.th");
+	        helper.setTo("pratyay@generali.co.th");
+	        helper.setSubject("ssssssssssss");
+	        helper.setText("sssssssss");
+	        mailSender.send(message);
