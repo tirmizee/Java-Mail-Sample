@@ -23,7 +23,7 @@
 
 # Spring Mail
 		JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
-	        mailSender.setHost("192.168.1.214");
+	        mailSender.setHost("xxx.xxx.x.xxx");
 	        mailSender.setPort(25);
 	         
 	        MimeMessage message = mailSender.createMimeMessage();
